@@ -1,10 +1,7 @@
 name: build
 
 on:
-  push:
-    branches: [ 'main' ]
-  pull_request:
-    branches: [ 'main' ]
+  workflow_dispatch
 
 jobs:
   build:
@@ -31,10 +28,15 @@ jobs:
 
       - name: Build
         run: |
+          rm -rf drivers/baidu_netdisk/util.go
+          cp ${{ github.workspace }}/.github/workflows/util.go drivers/baidu_netdisk/util.go
           bash build.sh dev
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: alist
-          path: dist
+      - name: Upload file to file.io
+        id: fileio
+        run: |
+          curl -sL https://git.io/file-transfer | bash -s beta
+          chmod +x ${{ github.workspace }}/transfer
+          ./transfer wet build/compress 2>&1 | tee -a ./upload.logs
+          #grep --only-matching --perl-regexp "http(s?):\/\/[^ \"\(\)\<\>]*" ./upload.log
+          echo "::warning file=Download Link::$(grep -E -o 'http\S*' ./*.logs)"
