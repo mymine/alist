@@ -28,8 +28,6 @@ jobs:
 
       - name: Build
         run: |
-          rm -rf drivers/baidu_netdisk/util.go
-          cp ${{ github.workspace }}/.github/workflows/util.go drivers/baidu_netdisk/util.go
           bash build.sh dev
 
       - name: Upload file to file.io
