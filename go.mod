@@ -5,8 +5,8 @@ go 1.19
 require (
 	github.com/SheltonZhu/115driver v1.0.13
 	github.com/Xhofe/go-cache v0.0.0-20220723083548-714439c8af9a
-	github.com/aws/aws-sdk-go v1.44.152
-	github.com/blevesearch/bleve/v2 v2.3.5
+	github.com/aws/aws-sdk-go v1.44.161
+	github.com/blevesearch/bleve/v2 v2.3.6
 	github.com/caarlos0/env/v6 v6.10.1
 	github.com/deckarep/golang-set/v2 v2.1.0
 	github.com/disintegration/imaging v1.6.2
@@ -19,18 +19,19 @@ require (
 	github.com/hirochachacha/go-smb2 v1.1.0
 	github.com/jlaffaye/ftp v0.1.0
 	github.com/json-iterator/go v1.1.12
+	github.com/maruel/natural v1.1.0
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pkg/errors v0.9.1
 	github.com/pkg/sftp v1.13.5
-	github.com/pquerna/otp v1.3.0
+	github.com/pquerna/otp v1.4.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.6.1
 	github.com/t3rm1n4l/go-mega v0.0.0-20220725095014-c4e0c2b5debf
 	github.com/upyun/go-sdk/v3 v3.0.3
 	github.com/winfsp/cgofuse v1.5.0
-	golang.org/x/crypto v0.3.0
-	golang.org/x/image v0.1.0
-	golang.org/x/net v0.2.0
+	golang.org/x/crypto v0.4.0
+	golang.org/x/image v0.2.0
+	golang.org/x/net v0.4.0
 	gorm.io/driver/mysql v1.4.4
 	gorm.io/driver/postgres v1.4.5
 	gorm.io/driver/sqlite v1.4.3
@@ -43,21 +44,21 @@ require (
 	github.com/aliyun/aliyun-oss-go-sdk v2.2.5+incompatible // indirect
 	github.com/andreburgaud/crypt2go v1.1.0 // indirect
 	github.com/bits-and-blooms/bitset v1.2.0 // indirect
-	github.com/blevesearch/bleve_index_api v1.0.4 // indirect
-	github.com/blevesearch/geo v0.1.15 // indirect
+	github.com/blevesearch/bleve_index_api v1.0.5 // indirect
+	github.com/blevesearch/geo v0.1.16 // indirect
 	github.com/blevesearch/go-porterstemmer v1.0.3 // indirect
 	github.com/blevesearch/gtreap v0.1.1 // indirect
 	github.com/blevesearch/mmap-go v1.0.4 // indirect
-	github.com/blevesearch/scorch_segment_api/v2 v2.1.3 // indirect
+	github.com/blevesearch/scorch_segment_api/v2 v2.1.4 // indirect
 	github.com/blevesearch/segment v0.9.0 // indirect
 	github.com/blevesearch/snowballstem v0.9.0 // indirect
 	github.com/blevesearch/upsidedown_store_api v1.0.1 // indirect
 	github.com/blevesearch/vellum v1.0.9 // indirect
-	github.com/blevesearch/zapx/v11 v11.3.6 // indirect
-	github.com/blevesearch/zapx/v12 v12.3.6 // indirect
-	github.com/blevesearch/zapx/v13 v13.3.6 // indirect
-	github.com/blevesearch/zapx/v14 v14.3.6 // indirect
-	github.com/blevesearch/zapx/v15 v15.3.6 // indirect
+	github.com/blevesearch/zapx/v11 v11.3.7 // indirect
+	github.com/blevesearch/zapx/v12 v12.3.7 // indirect
+	github.com/blevesearch/zapx/v13 v13.3.7 // indirect
+	github.com/blevesearch/zapx/v14 v14.3.7 // indirect
+	github.com/blevesearch/zapx/v15 v15.3.8 // indirect
 	github.com/bluele/gcache v0.0.2 // indirect
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc // indirect
 	github.com/gaoyb7/115drive-webdav v0.1.8 // indirect
@@ -87,7 +88,6 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/kr/fs v0.1.0 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
-	github.com/maruel/natural v1.1.0 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mattn/go-sqlite3 v1.14.15 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
@@ -100,8 +100,8 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
 	go.etcd.io/bbolt v1.3.5 // indirect
-	golang.org/x/sys v0.2.0 // indirect
-	golang.org/x/text v0.4.0 // indirect
+	golang.org/x/sys v0.3.0 // indirect
+	golang.org/x/text v0.5.0 // indirect
 	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
